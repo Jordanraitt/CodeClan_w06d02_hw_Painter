@@ -5,13 +5,11 @@
 // should be able to be painted
 
 
-const Room = function(area) {
+const Room = function(area, painted, paintable) {
 
-  this.area  = area
-
-
-
-
-
-
+  this.area       = area;
+  this.painted    = painted;
+  this.paintable  = paintable;
 };
+
+module.exports = Room;

@@ -5,10 +5,23 @@
 // be able to empty itself of paint
 
 
-const Paint = function() {
+const Paint = function(litres) {
 
-
-
-
+  this.litres = litres
 
 };
+
+Paint.prototype.isEmpty = function(){
+
+  if (this.litres == 0)
+    {
+    return true;
+    };
+return false;
+};
+
+Paint.prototype.drain = function(){
+  return this.litres = 0
+};
+
+module.exports = Paint;
